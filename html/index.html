@@ -1,0 +1,13 @@
+<body>
+    <canvas id="canvas1" width="1200" height="630"></canvas>
+</body>
+
+<script>
+var can = document.getElementById('canvas1');
+var ctx = can.getContext('2d');
+var img = new Image();
+img.onload = function() {
+    ctx.drawImage(img, 0, 0);
+}
+img.src = "index.svg"
+</script>
